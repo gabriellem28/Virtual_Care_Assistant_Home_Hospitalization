@@ -1,4 +1,4 @@
-# LLM-project
+# Virtual Care Assistant for Home Hospitalization
 ## Project Title
 
 Virtual Care Assistant for Home Hospitalization
