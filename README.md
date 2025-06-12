@@ -124,3 +124,5 @@ Gabrielle Maor
 Shay Sason  
 HIT – Digital Health Technologies  
 NLP & LLM Final Project (2025)
+
+<img src="assets/PHOTO-2025-06-03-12-06-19.jpg" alt="System Flow" width="500"/>
