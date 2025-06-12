@@ -21,6 +21,14 @@ A synthetic dataset was generated to simulate real-world home hospitalization ca
 - Vitals: Changes in heart rate, respiratory rate, temperature, and blood pressure (Day 2 – Day 1).
 - Labels: Manually assigned clinical outcomes (0 = No Change, 1 = Improvement, 2 = Deterioration).
 
+The dataset was generated using Python code that models common symptom-vital patterns observed in home care. It was curated to reflect realistic class distributions and noise in patient input.
+
+You can view or download the dataset here:  
+[patient_dataset.csv](data/patient_dataset.csv)
+
+Data was generated using this notebook:  
+[care_giver_data_generation.ipynb](notebooks/care_giver_data_generation.ipynb)
+
 ## Tasks Performed
 
 ### Exploratory Data Analysis (EDA)
