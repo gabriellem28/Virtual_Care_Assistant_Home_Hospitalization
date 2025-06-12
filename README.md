@@ -16,13 +16,15 @@ The assistant is intended to improve early detection of clinical deterioration i
 - Build a real-time decision-support model combining NLP and tabular data.
 
 ## Dataset (Synthetic)
-A synthetic dataset was generated to simulate real-world home hospitalization cases:
+In this project, we synthetically generated a dataset using GPT-based prompting to simulate realistic home hospitalization cases.
 - Text: Free-text symptom descriptions written in natural, informal language.
 - Vitals: Changes in heart rate, respiratory rate, temperature, and blood pressure (Day 2 – Day 1).
 - Labels: Manually assigned clinical outcomes (0 = No Change, 1 = Improvement, 2 = Deterioration).
 
-The dataset was generated using Python code that models common symptom-vital patterns observed in home care. It was curated to reflect realistic class distributions and noise in patient input.
-
+A fully synthetic dataset was generated using Python code that models typical symptom–vital patterns observed in home care.  
+Each sample includes free-text symptom descriptions and structured vitals (HR, RR, Temp, BP deltas), returned in JSON format and converted to tabular form.
+The dataset reflects realistic class distributions and input noise, making it suitable for training and evaluating classification and multimodal fusion models.
+ 
 You can view or download the dataset here:  
 [patient_dataset.csv](data/patient_dataset.csv)
 
