@@ -1,4 +1,3 @@
-# Project Title
 # Virtual Care Assistant for Home Hospitalization
 
 ## Project Overview
@@ -6,9 +5,9 @@ This project presents an AI-powered assistant designed to support remote clinica
 - No Change  
 - Improvement  
 - Deterioration
-
 The assistant is intended to improve early detection of clinical deterioration in situations where no medical staff is physically present.
-![PIC](assets/PHOTO-2025-06-03-01-38-37.jpg)
+
+<img src="assets/PHOTO-2025-06-03-01-38-37.jpg" alt="System Flow" width="700"/>
 
 ## Objectives
 - Extract clinically relevant information from unstructured text.
@@ -57,15 +56,18 @@ We experimented with the following model families:
 ## Evaluation Metrics
 - Accuracy
 - F1 Macro
+- Recall
 - Cross-validation for generalization
 - Test set evaluation
 
-### Best Performing Model:
-- Model: `LGBM_Combined_Test`
-- Accuracy: 0.971
-- F1 Macro: 0.972
+###  Best Performing Model:
 
-![PIC1](assets/PHOTO-2025-06-03-10-56-49.jpg)
+| Model Name          | Accuracy | F1 Macro |
+|---------------------|----------|----------|
+| LGBM_Combined_Test  | 0.971    | 0.972    |
+
+#### Per-Class Recall – Top 5 Fusion Models
+<img src="assets/PHOTO-2025-06-03-10-56-49.jpg" alt="Model Performance" width="700"/>
 
 ## Visualizations
 - Comparison plots of model performance
@@ -89,6 +91,24 @@ We experimented with the following model families:
 - HuggingFace Transformers (BERT)
 - XGBoost, LightGBM
 - Seaborn, Matplotlib
+  
+## Prior Research & Related Work
+Our project was inspired by recent advances in clinical NLP and deterioration detection that combine unstructured text with structured physiological signals. The following studies guided our design choices and model architecture:
+
+### Studies:
+
+- **Nature Digit. Med., 2021**  
+  *Deep learning for early warning of inpatient deterioration*  
+  Used attention-based LSTM on minute-level vitals to predict deterioration up to 12 hours in advance.  
+
+- **J. Gen. Intern. Med., 2023**  
+  *Fusion of clinical notes and vitals using BERT + MLP*  
+  Showed improvement in macro-F1 when combining notes with vitals.  
+
+- **PMC, 2019**  
+  *Combining vital signs and free-text for deterioration detection*  
+  Demonstrated the effectiveness of text features like “pain”, “fatigue” and LightGBM fusion.  
+
 
 ## Authors
 Gabrielle Maor  
