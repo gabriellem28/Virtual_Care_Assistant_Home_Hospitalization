@@ -5,6 +5,7 @@ This project presents an AI-powered assistant designed to support remote clinica
 - No Change  
 - Improvement  
 - Deterioration
+  
 The assistant is intended to improve early detection of clinical deterioration in situations where no medical staff is physically present.
 
 <img src="assets/PHOTO-2025-06-03-01-38-37.jpg" alt="System Flow" width="700"/>
