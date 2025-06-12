@@ -32,7 +32,10 @@ Data was generated using this notebook:
 [care_giver_data_generation.ipynb](notebooks/care_giver_data_generation.ipynb)
 
 ## Tasks Performed
-
+Notebooks:
+- 📓 [caregiver_notes_data_generation.ipynb](notebooks/caregiver_notes_data_generation.ipynb) — Synthetic data creation
+- 📓 [NLP_Final_Gabrielle_and_Shay.ipynb](notebooks/NLP_Final_Gabrielle_and_Shay.ipynb) — Full EDA, preprocessing & model training
+  
 ### Exploratory Data Analysis (EDA)
 - Label distribution
 - Text length distribution
