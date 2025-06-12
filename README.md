@@ -79,7 +79,7 @@ We experimented with the following model families:
 |---------------------|----------|----------|
 | LGBM_Combined_Test  | 0.971    | 0.972    |
 
-→ Best results achieved by **LightGBM + TF-IDF + Vitals** fusion model.
+→ Best results achieved by **LightGBM + TF-IDF** fusion model.
 
 #### Per-Class Recall – Top 5 Fusion Models
 <img src="assets/PHOTO-2025-06-03-10-56-49.jpg" alt="Model Performance" width="700"/>
