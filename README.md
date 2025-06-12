@@ -7,7 +7,7 @@ This project presents an AI-powered assistant designed to support remote clinica
   
 The assistant is intended to improve early detection of clinical deterioration in situations where no medical staff is physically present.
 
-<img src="assets/PHOTO-2025-06-03-01-38-37.jpg" alt="System Flow" width="700"/>
+<img src="assets/PHOTO-2025-06-03-01-38-37.jpg" alt="System Flow" width="500"/>
 
 ## 🎯 Objectives
 - Extract clinically relevant information from unstructured text.
@@ -82,7 +82,7 @@ We experimented with the following model families:
 → Best results achieved by **LightGBM + TF-IDF** fusion model.
 
 #### Per-Class Recall – Top 5 Fusion Models
-<img src="assets/PHOTO-2025-06-03-10-56-49.jpg" alt="Model Performance" width="700"/>
+<img src="assets/PHOTO-2025-06-03-10-56-49.jpg" alt="Model Performance" width="500"/>
 
 ## 📈 Visualizations
 - Comparison plots of model performance
