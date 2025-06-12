@@ -1,6 +1,5 @@
 # Virtual Care Assistant for Home Hospitalization
-
-## Project Overview
+## 🧠 Project Overview
 This project presents an AI-powered assistant designed to support remote clinical decision-making in home hospitalization settings. The system processes patient-reported symptom descriptions in natural language, along with physiological vital signs, to predict the patient’s current status:
 - No Change  
 - Improvement  
@@ -10,12 +9,12 @@ The assistant is intended to improve early detection of clinical deterioration i
 
 <img src="assets/PHOTO-2025-06-03-01-38-37.jpg" alt="System Flow" width="700"/>
 
-## Objectives
+## 🎯 Objectives
 - Extract clinically relevant information from unstructured text.
 - Integrate physiological data to enhance prediction accuracy.
 - Build a real-time decision-support model combining NLP and tabular data.
 
-## Dataset (Synthetic)
+## 📁 Dataset (Synthetic)
 In this project, we synthetically generated a dataset using GPT-based prompting to simulate realistic home hospitalization cases.
 - Text: Free-text symptom descriptions written in natural, informal language.
 - Vitals: Changes in heart rate, respiratory rate, temperature, and blood pressure (Day 2 – Day 1).
@@ -31,25 +30,25 @@ You can view or download the dataset here:
 Data was generated using this notebook:  
 [care_giver_data_generation.ipynb](notebooks/care_giver_data_generation.ipynb)
 
-## Tasks Performed
+## ⚙️ Tasks Performed
 Notebooks:
 - 📓 [caregiver_notes_data_generation.ipynb](notebooks/caregiver_notes_data_generation.ipynb) — Synthetic data creation
 - 📓 [NLP_Final_Gabrielle_and_Shay.ipynb](notebooks/NLP_Final_Gabrielle_and_Shay.ipynb) — Full EDA, preprocessing & model training
   
-### Exploratory Data Analysis (EDA)
+### ⚙️ Exploratory Data Analysis (EDA)
 - Label distribution
 - Text length distribution
 - Distribution and correlation of vital signs
 - Boxplots and violin plots grouped by label
 - Word clouds for each class
 
-### Preprocessing
+### ⚙️ Preprocessing
 - Text cleaning (punctuation, stopwords, lowercasing)
 - Delta feature creation for vitals
 - Missing value imputation
 - Feature scaling
 
-### Modeling
+### 🤖 Modeling
 
 We experimented with the following model families:
 
@@ -67,46 +66,48 @@ We experimented with the following model families:
     - Simple NN with BERT embeddings and vitals
     - Improved NN with deeper layers, Batch Normalization, Dropout, and learning rate tuning
 
-## Evaluation Metrics
+## 📊 Evaluation Metrics
 - Accuracy
 - F1 Macro
 - Recall
 - Cross-validation for generalization
 - Test set evaluation
 
-###  Best Performing Model:
+### 🏆 Best Performing Model:
 
 | Model Name          | Accuracy | F1 Macro |
 |---------------------|----------|----------|
 | LGBM_Combined_Test  | 0.971    | 0.972    |
 
+→ Best results achieved by **LightGBM + TF-IDF + Vitals** fusion model.
+
 #### Per-Class Recall – Top 5 Fusion Models
 <img src="assets/PHOTO-2025-06-03-10-56-49.jpg" alt="Model Performance" width="700"/>
 
-## Visualizations
+## 📈 Visualizations
 - Comparison plots of model performance
 - Confusion matrices
 - Feature distributions and correlations
 - Text-based analyses (lengths, word clouds)
 
-## Key Insights
+## 💡 Key Insights
 - Fusion of structured (vitals) and unstructured (text) data led to superior performance.
 - BERT improved understanding of nuanced symptom descriptions.
 - Model enhancements like Batch Normalization and Dropout increased model robustness.
 
-## Future Work
+## 🚀 Future Work
 - Use real clinical datasets (e.g., MIMIC-IV, sensor logs).
 - Implement Named Entity Recognition (NER) and triage reasoning.
 - Integrate the system into a conversational chatbot interface.
 
-## Technologies Used
+## 🛠️ Technologies Used
 - Python, Pandas, Scikit-learn
 - TensorFlow, Keras
 - HuggingFace Transformers (BERT)
 - XGBoost, LightGBM
 - Seaborn, Matplotlib
   
-## Prior Research & Related Work
+## 🧾 Prior Research & Related Work
 Our project was inspired by recent advances in clinical NLP and deterioration detection that combine unstructured text with structured physiological signals. The following studies guided our design choices and model architecture:
 
 ### Studies:
@@ -124,10 +125,10 @@ Our project was inspired by recent advances in clinical NLP and deterioration de
   Demonstrated the effectiveness of text features like “pain”, “fatigue” and LightGBM fusion.  
 
 
-## Authors
+## 👩‍💻 Authors
 Gabrielle Maor  
 Shay Sason  
-HIT – Digital Health Technologies  
+🎓 HIT – Digital Health Technologies  
 NLP & LLM Final Project (2025)
 
 <img src="assets/PHOTO-2025-06-03-12-06-19.jpg" alt="System Flow" width="500"/>
