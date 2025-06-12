@@ -8,6 +8,7 @@ This project presents an AI-powered assistant designed to support remote clinica
 - Deterioration
 
 The assistant is intended to improve early detection of clinical deterioration in situations where no medical staff is physically present.
+![PIC](assets/PHOTO-2025-06-03-01-38-37.jpg)
 
 ## Objectives
 - Extract clinically relevant information from unstructured text.
@@ -36,6 +37,7 @@ A synthetic dataset was generated to simulate real-world home hospitalization ca
 - Feature scaling
 
 ### Modeling
+
 We experimented with the following model families:
 
 - **Text-only models**
@@ -62,6 +64,8 @@ We experimented with the following model families:
 - Model: `LGBM_Combined_Test`
 - Accuracy: 0.971
 - F1 Macro: 0.972
+
+![PIC1](assets/PHOTO-2025-06-03-10-56-49.jpg)
 
 ## Visualizations
 - Comparison plots of model performance
